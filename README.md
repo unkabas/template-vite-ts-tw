@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# unbas/template-vite-ts-tw
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal template for React + TypeScript + Tailwind CSS projects powered by Vite and Bun.
 
-Currently, two official plugins are available:
+![Описание картинки](./public/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **React** for building UI.
+- **TypeScript** for static typing.
+- **Tailwind CSS** for utility-first styling.
+- **Vite** for fast development and build.
+- **Bun** for speedy runtime, bundler, and package management.
+- Adaptive design with CSS `clamp()` support.
+- SVG icon support.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+> **Note:** Make sure you have [Bun](https://bun.sh/) installed.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Clone the repository and install dependencies:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/unbas/template-vite-ts-tw.git
+cd template-vite-ts-tw
+bun install
 ```
