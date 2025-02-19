@@ -7,10 +7,17 @@
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
+	background-color: #0a121f;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+.fluid-text {
+	font-size: clamp(2rem, 5vw + 1rem, 10rem);
+}
+.fluid-icons {
+	width: clamp(2rem, 5vw + 1rem, 10rem);
+	height: auto;
 }

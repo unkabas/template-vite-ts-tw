@@ -6,7 +6,13 @@ interface ContainerProps {
 }
 
 const Container: FC<ContainerProps> = ({ children, className = '' }) => {
-	return <div className={`container mx-auto px-4 ${className}`}>{children}</div>
+	return (
+		<div
+			className={`container mx-auto px-4 flex flex-col items-center ${className}`}
+		>
+			{children}
+		</div>
+	)
 }
 
 export default Container
